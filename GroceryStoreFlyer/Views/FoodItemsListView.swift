@@ -11,7 +11,9 @@ struct FoodItemsListView: View {
     let departmentToShow: Department
     var body: some View {
         NavigationStack{
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            List(departmentToShow.items) {currentItem in
+                    Text(currentItem.name)
+            }
                 .navigationTitle(departmentToShow.name)
         }
 
@@ -19,5 +21,5 @@ struct FoodItemsListView: View {
 }
 
 #Preview {
-    FoodItemsListView(departmentToShow: thisWeeksFlyer.departments.first!)
+    FoodItemsListView(departmentToShow: thisWeeksFlyer.departments[0])
 }
