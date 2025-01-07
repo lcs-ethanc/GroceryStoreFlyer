@@ -23,6 +23,7 @@ struct FoodItem: Identifiable {
     let image: String
 }
 
+
 let thisWeeksFlyer = Flyer(
     
     departments: [
@@ -55,6 +56,24 @@ let thisWeeksFlyer = Flyer(
                 FoodItem(
                     name: "Clam Chowder",
                     image: "clam-chowder"
+                ),
+            ]
+        ),
+        
+        Department(
+            name: "Deli",
+            items: [
+                FoodItem(
+                    name: "Garlic Sausage Link",
+                    image: "garlic-sausage-link"
+                ),
+                FoodItem(
+                    name: "Original Turkey Bites",
+                    image: "original-turkey-bites"
+                ),
+                FoodItem(
+                    name: "Turkey Pizza Pepperoni",
+                    image: "turkey-pizza-pepperoni"
                 ),
             ]
         ),
