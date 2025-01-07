@@ -10,16 +10,16 @@ import SwiftUI
 struct FoodItemsListView: View {
     let departmentToShow: Department
     var body: some View {
-        NavigationStack{
             List(departmentToShow.items) {currentItem in
                     Text(currentItem.name)
             }
                 .navigationTitle(departmentToShow.name)
-        }
 
     }
 }
 
 #Preview {
-    FoodItemsListView(departmentToShow: thisWeeksFlyer.departments[0])
+    NavigationStack{
+        FoodItemsListView(departmentToShow: thisWeeksFlyer.departments[0])
+    }
 }
