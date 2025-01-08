@@ -35,13 +35,15 @@ let thisWeeksFlyer = Flyer(
             items: [
                 FoodItem(
                     name: "Sirloin Tip Oven Roasts",
-                    image: "sirloin-tips"
-                    price: 15.37
-                    
+                    image: "sirloin-tips",
+                    price: 15.37,
+                    amountPerPackage: 1000
                 ),
                 FoodItem(
                     name: "Porkloin Back Ribs",
-                    image: "porkloin-back-ribs"
+                    image: "porkloin-back-ribs",
+                    price: 8.75,
+                    amountPerPackage: 1000
                 ),
             ]
         ),
@@ -51,15 +53,21 @@ let thisWeeksFlyer = Flyer(
             items: [
                 FoodItem(
                     name: "Wild Pacific Halibut Fillets",
-                    image: "wild-pacific-halibut-fillets"
+                    image: "wild-pacific-halibut-fillets",
+                    price: 4.97,
+                    amountPerPackage: 100
                 ),
                 FoodItem(
                     name: "Wild Sockeye Salmon Fillets",
-                    image: "wild-sockeye-salmon-fillets"
+                    image: "wild-sockeye-salmon-fillets",
+                    price: 3.47,
+                    amountPerPackage: 100
                 ),
                 FoodItem(
                     name: "Clam Chowder",
-                    image: "clam-chowder"
+                    image: "clam-chowder",
+                    price: 11.97,
+                    amountPerPackage: 550
                 ),
             ]
         ),
@@ -69,15 +77,21 @@ let thisWeeksFlyer = Flyer(
             items: [
                 FoodItem(
                     name: "Garlic Sausage Link",
-                    image: "garlic-sausage-link"
+                    image: "garlic-sausage-link",
+                    price: 5.97,
+                    amountPerPackage: 400
                 ),
                 FoodItem(
                     name: "Original Turkey Bites",
-                    image: "original-turkey-bites"
+                    image: "original-turkey-bites",
+                    price: 11.97,
+                    amountPerPackage: 300
                 ),
                 FoodItem(
                     name: "Turkey Pizza Pepperoni",
-                    image: "turkey-pizza-pepperoni"
+                    image: "turkey-pizza-pepperoni",
+                    price: 7.47,
+                    amountPerPackage: 250
                 ),
             ]
         ),
