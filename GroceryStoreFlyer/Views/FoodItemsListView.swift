@@ -16,6 +16,7 @@ struct FoodItemsListView: View {
                         Text(currentItem.name)
                             .bold()
                     }
+                    .padding(.trailing,5)
                     
                 Image(currentItem.image)
                     .resizable()

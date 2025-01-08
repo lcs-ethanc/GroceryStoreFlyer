@@ -21,6 +21,8 @@ struct FoodItem: Identifiable {
     let id = UUID()
     let name: String
     let image: String
+    let price: Double
+    let amountPerPackage: Double
 }
 
 
@@ -34,6 +36,8 @@ let thisWeeksFlyer = Flyer(
                 FoodItem(
                     name: "Sirloin Tip Oven Roasts",
                     image: "sirloin-tips"
+                    price: 15.37
+                    
                 ),
                 FoodItem(
                     name: "Porkloin Back Ribs",
