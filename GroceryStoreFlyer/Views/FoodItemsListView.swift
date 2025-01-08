@@ -15,14 +15,15 @@ struct FoodItemsListView: View {
                     VStack (alignment: .leading){
                         Text(currentItem.name)
                             .bold()
+                            .font(.system(size: 30))
                         Text("$\(String(format: "%.2f", currentItem.price))")
                             .font(.system(size: 30))
-                    }
-                    .padding(.trailing,5)
+                    } .padding(.trailing,5)
+                    Spacer()
                     
                 Image(currentItem.image)
                     .resizable()
-                    .frame(width:200, height:200)
+                    .frame(width:100, height:100)
                 }
                     
             }
