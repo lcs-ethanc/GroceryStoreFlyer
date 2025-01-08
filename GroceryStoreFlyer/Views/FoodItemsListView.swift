@@ -12,9 +12,11 @@ struct FoodItemsListView: View {
     var body: some View {
             List(departmentToShow.items) {currentItem in
                 HStack (alignment: .top){
-                    VStack{
+                    VStack (alignment: .leading){
                         Text(currentItem.name)
                             .bold()
+                        Text("$\(String(format: "%.2f", currentItem.price))")
+                            .font(.system(size: 30))
                     }
                     .padding(.trailing,5)
                     
