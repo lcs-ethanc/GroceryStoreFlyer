@@ -11,7 +11,17 @@ struct FoodItemsListView: View {
     let departmentToShow: Department
     var body: some View {
             List(departmentToShow.items) {currentItem in
-                    Text(currentItem.name)
+                HStack (alignment: .top){
+                    VStack{
+                        Text(currentItem.name)
+                            .bold()
+                    }
+                    
+                Image(currentItem.image)
+                    .resizable()
+                    .frame(width:200, height:200)
+                }
+                    
             }
                 .navigationTitle(departmentToShow.name)
 

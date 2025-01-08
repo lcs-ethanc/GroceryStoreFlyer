@@ -22,7 +22,7 @@ struct DepartmentsListView: View {
 
                 }
             .navigationTitle("Weekly Flyer")
-            }
+            }   
             
         }
     }
